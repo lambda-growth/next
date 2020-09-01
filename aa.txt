@@ -1,0 +1,43 @@
+1.cd 进入文件目录
+2.配置全局用户
+$ git config --global user.name "用户名"
+$ git config --global user.email "git账号"
+3.本地磁盘目录（工作区）提交到github（远程仓库），先创建本地的虚拟仓库（暂存区）
+1）git建仓  +  new repository
+2)  git init命令初始化，本地建立暂存区（.git）
+3)  新建文件index.html,readme.md
+4. 工作区 ---》暂存区
+git add 文件名/git  add * 提交所有文件
+git commit -m "描述当前提交内容“
+5. 查看当前工作区的状态
+git status（可以查看当前修改状态）
+6.从暂存区恢复文件到工作区
+git checkout 文件名 （返回修改前）
+7. 查看工作区和暂存区版本的区别
+git diff
+8. 清屏操作
+clear
+9. 查看提交到暂存区的历史版本
+git log
+10. 恢复到指定的版本
+git reset  --hard 版本号
+11.提交到github，
+1）先生成ssm密匙   ssh-keygen -t rsa -C "邮箱地址"
+windows 电脑查找文件： 我的电脑--用户--用户名文件夹--.ssh（隐藏文件）找到XXX.pub 文件 打开它
+2）github配置密匙 setting -- ssh and gpg key
+12. 远程仓库地址拷贝，指定提交
+git remote add origin https:... .git
+git push -u origin master
+
+
+第二次提交
+1. git add *
+2. git commit -m "说明"
+3. git push
+
+其他人拷贝git内容到本地
+1. cd 文件夹
+2. git clone "远程仓库地址"
+
+同步更新代码到本地
+1.git pull
