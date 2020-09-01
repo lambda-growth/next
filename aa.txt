@@ -5,8 +5,8 @@ $ git config --global user.email "git账号"
 3.本地磁盘目录（工作区）提交到github（远程仓库），先创建本地的虚拟仓库（暂存区）
 1）git建仓  +  new repository
 2)  git init命令初始化，本地建立暂存区（.git）
-3)  新建文件index.html,readme.md
-4. 工作区 ---》暂存区
+3)  新建文件index.html, readme.md
+4. 工作区 --->暂存区
 git add 文件名/git  add * 提交所有文件
 git commit -m "描述当前提交内容“
 5. 查看当前工作区的状态
