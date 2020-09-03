@@ -29,15 +29,35 @@ windows 电脑查找文件： 我的电脑--用户--用户名文件夹--.ssh（�
 git remote add origin https:... .git
 git push -u origin master
 
+修改默认路劲
+/git remote -v
+git remote rm origin 
+git remote add origin git@github.com:lambda-growth/next.git
+git push -u origin master
 
 第二次提交
 1. git add *
 2. git commit -m "说明"
 3. git push
 
+
+
 其他人拷贝git内容到本地
 1. cd 文件夹
 2. git clone "远程仓库地址"
 
+创建分支
+git checkout release_pro_1 分支
+git checkout -b 'feature/branch1'
+git branch 查看分支
+在branch1中修改完成进行合并分支
+git  add *
+git commit -m..
+git checkout release_pro_1
+git branch
+git merge feature/branch1
+git push origin release_pro_1
+
 同步更新代码到本地
 1.git pull
+
